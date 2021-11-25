@@ -134,6 +134,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  tiempobala: 8
+  tiempobala: 5
   baibala: 0
-  damage: 10

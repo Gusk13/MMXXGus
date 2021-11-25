@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Saludene : MonoBehaviour
 {
-    public float salud;
+    
     Animator anim;
+    public GameObject rangou;
 
     void Start()
     {
         anim = GetComponent<Animator>();
+        anim.SetBool("destruc", false);
     }
 
     // Update is called once per frame
@@ -17,12 +19,17 @@ public class Saludene : MonoBehaviour
     {
 
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        if (collision.CompareTag("bala"))
+        if (col.collider.CompareTag("bala"))
         {
+
             anim.SetBool("destruc", true);
-            // Destroy(gameObject);
+            //Destroy(gameObject);
+            Debug.Log("cuchíplan");
+            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<Enemy>().enabled = false;
+            rangou.SetActive(false);
         }
         
         

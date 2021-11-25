@@ -16,13 +16,13 @@ public class Saludmega : MonoBehaviour
     {
 
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        if (collision.CompareTag("enemy"))
+        if (col.collider.CompareTag("enemy"))
         {
            // Destroy(gameObject);
         }
-        if (collision.CompareTag("balasen"))
+        if (col.collider.CompareTag("balasen"))
         {
             //Destroy(gameObject);
         }

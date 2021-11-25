@@ -61,16 +61,9 @@ public class Enemy : MonoBehaviour
             tiempodis = timeToshoot;
         }
           
-            
-        
-
-
-
-
-
-
 
 
     }
+
    
 }

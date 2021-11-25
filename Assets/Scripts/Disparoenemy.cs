@@ -7,7 +7,7 @@ public class Disparoenemy : MonoBehaviour
     public float speed;
     public float tiempobala;
     public bool baibala;
-    public float damage;
+    
     // Start is called before the first frame update
     void Start()
     {

@@ -34,6 +34,19 @@ public class Disparo : MonoBehaviour
 
 
         }
+
+        if (col.collider.CompareTag("enemy"))
+        {
+
+            miani.SetBool("Desbala", true);
+
+            if (!baibala)
+            {
+                baibala = true;
+            }
+
+
+        }
         if (baibala)
         {
             Destroy(gameObject, tiempobala);
