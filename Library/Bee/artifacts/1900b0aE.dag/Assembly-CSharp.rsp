@@ -348,8 +348,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/Disparo.cs"
+"Assets/Scripts/Disparoenemy.cs"
 "Assets/Scripts/Enemy.cs"
+"Assets/Scripts/Enemytwo.cs"
 "Assets/Scripts/Megaman.cs"
+"Assets/Scripts/Saludene.cs"
+"Assets/Scripts/Saludmega.cs"
 -langversion:8.0
 
 /deterministic
