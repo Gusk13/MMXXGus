@@ -19,7 +19,7 @@ public class Megaman : MonoBehaviour
     public float speed_dash;
     public float doublejumpspeed = 2.5f;
     private bool candoublejump;
-
+    
 
 
 

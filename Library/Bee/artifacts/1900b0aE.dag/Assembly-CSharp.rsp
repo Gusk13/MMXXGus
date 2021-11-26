@@ -349,10 +349,15 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/Disparo.cs"
 "Assets/Scripts/Disparoenemy.cs"
+"Assets/Scripts/Disparoup.cs"
+"Assets/Scripts/Efecto.cs"
+"Assets/Scripts/Enemigo3.cs"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/Enemytwo.cs"
 "Assets/Scripts/Megaman.cs"
+"Assets/Scripts/Rangotorr.cs"
 "Assets/Scripts/Saludene.cs"
+"Assets/Scripts/Saludenetre.cs"
 "Assets/Scripts/Saludmega.cs"
 -langversion:8.0
 

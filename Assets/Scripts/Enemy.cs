@@ -9,9 +9,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] CircleCollider2D rango;
     public GameObject[] bullet;
     public float tiempodis;
-   
+    
     public float timeToshoot;
-    public float damage;
+   
 
 
     // Start is called before the first frame update
@@ -64,6 +64,7 @@ public class Enemy : MonoBehaviour
 
 
     }
-
    
+ 
+
 }

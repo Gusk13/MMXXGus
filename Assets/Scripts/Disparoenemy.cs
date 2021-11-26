@@ -5,13 +5,13 @@ using UnityEngine;
 public class Disparoenemy : MonoBehaviour
 {
     public float speed;
-    public float tiempobala;
+    [SerializeField] private float tiempobala;
     public bool baibala;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        Destroy(gameObject, tiempobala);
     }
 
     // Update is called once per frame
@@ -39,7 +39,7 @@ public class Disparoenemy : MonoBehaviour
         }
         if (baibala)
         {
-            Destroy(gameObject, tiempobala);
+            Destroy(gameObject);
             Debug.Log("puff");
         }
     }

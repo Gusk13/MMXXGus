@@ -8,7 +8,7 @@ public class Enemytwo : MonoBehaviour
     {
         if (collision.CompareTag("player"))
         {
-            transform.GetComponentInParent<Enemy>().Atacando();
+            transform.GetComponentInParent<Enemigo3>().Atacando();
         }
     }
 

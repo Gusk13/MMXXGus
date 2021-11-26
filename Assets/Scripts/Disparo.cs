@@ -6,7 +6,7 @@ public class Disparo : MonoBehaviour
     Animator miani;
     public float speed;
     public bool baibala;
-
+    
 
     void Start()
     {

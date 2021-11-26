@@ -1,13 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Saludene : MonoBehaviour
 {
-    
+    [SerializeField] int numDisparos;
+    [SerializeField] GameObject destrucioon;
     Animator anim;
     public GameObject rangou;
-
+    
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -19,20 +21,33 @@ public class Saludene : MonoBehaviour
     {
 
     }
-    private void OnCollisionEnter2D(Collision2D col)
+    public void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.collider.CompareTag("bala"))
+      ReducirVida();
+      if(numDisparos <1)
         {
+            if (col.collider.CompareTag("bala"))
+            {
 
-            anim.SetBool("destruc", true);
-            //Destroy(gameObject);
-            Debug.Log("cuchíplan");
-            GetComponent<BoxCollider2D>().enabled = false;
-            GetComponent<Enemy>().enabled = false;
-            rangou.SetActive(false);
+                anim.SetBool("destruc", true);
+                //Destroy(gameObject);
+                Debug.Log("cuchíplan");
+                GetComponent<BoxCollider2D>().enabled = false;
+                GetComponent<Enemy>().enabled = false;
+                rangou.SetActive(false);
+                Instantiate(destrucioon, transform.position, Quaternion.identity);
+            }
         }
+        
+       
         
         
     }
+    void ReducirVida()
+    {
+
+        numDisparos = numDisparos - 1;
+    }
+
 }
 
